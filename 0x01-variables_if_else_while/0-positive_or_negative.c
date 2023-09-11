@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-/* betty style doc for function main goes there */
 /** main - start of program
  * Description: program asserts for negative, positive numbers and zero
  * return: 0
  */
+/* betty style doc for function main goes there */
 int main(void)
 {
 int n;
