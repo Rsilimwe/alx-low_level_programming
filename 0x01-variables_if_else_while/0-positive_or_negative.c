@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/** main - start of program
- * Description: program asserts for negative, positive numbers and zero
- * return: 0
- */
+/** main – start of program
+ *Description: program asserts for negatives, positives numbers and zero
+ *return: always 0
 /* betty style doc for function main goes there */
 int main(void)
 {
@@ -23,5 +22,5 @@ else
 {
 printf("0 is zero\n");
 }
-return (0);
+    return (0);
 }
