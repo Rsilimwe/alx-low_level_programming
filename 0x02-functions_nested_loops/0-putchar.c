@@ -1,25 +1,7 @@
 #include <unistd.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	char str[] = "_putchar\n";
-	int i;
-
-	for (i = 0; i < 9; i++)
-	{
-		_putchar(str[i]);
-	}
-
-	return (0);
-}
-
-/**
- * _putchar - Writes a character to the standard output (stdout)
+ * _putchar - writes the character c to stdout
  * @c: The character to print
  *
  * Return: On success 1.
@@ -27,6 +9,21 @@ int main(void)
  */
 int _putchar(char c)
 {
-	return (write(1, &c, 1));
+return (write(1, &c, 1));
+}
+int main(void)
+{
+    // Calling _putchar to print each character of "_putchar" and a newline
+    _putchar('_');  // Print '_'
+    _putchar('p');  // Print 'p'
+    _putchar('u');  // Print 'u'
+    _putchar('t');  // Print 't'
+    _putchar('c');  // Print 'c'
+    _putchar('h');  // Print 'h'
+    _putchar('a');  // Print 'a'
+    _putchar('r');  // Print 'r'
+    _putchar('\n'); // Print a newline character '\n'
+
+    return 0; // Return 0 to indicate successful execution
 }
 
