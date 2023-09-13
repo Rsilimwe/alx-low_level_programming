@@ -17,16 +17,13 @@ for (i = 0; i <= n; i++)
 for (j = 0; j <= n; j++)
 {
 result = i * j;
-printf("%d", result);
-if (j < n)
-{
-if (result < 10)
-printf(",   ");
-else if (result < 100)
-printf(",  ");
-else
+if (j > 0)
 printf(", ");
-}
+if (result < 10)
+printf("  ");
+else if (result < 100)
+printf(" ");
+printf("%d", result);
 }
 putchar('\n');
 }
